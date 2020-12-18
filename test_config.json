@@ -1,0 +1,20 @@
+{
+  "schema": "iglu:com.snowplowanalytics.snowplow.storage/bigquery_config/jsonschema/1-0-0",
+  "data": {
+    "name": "Snowplow BigQuery Loader test",
+    "id": "e29907aa-73b6-40d3-a280-09ca1adc0da2",
+    "projectId": "steadfast-range-119414",
+    "datasetId": "nested_snowplow",
+    "tableId": "events",
+    "input": "snowplow-bq-loader",
+    "typesTopic": "snowplow-loader-types",
+    "typesSubscription": "bq-loader",
+    "badRows": "snowplow-bad-loader",
+    "failedInserts": "snowplow-loader-bad-insert",
+    "load": {
+      "mode": "STREAMING_INSERTS",
+      "retry": false
+    },
+    "purpose": "ENRICHED_EVENTS"
+  }
+}
